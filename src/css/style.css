@@ -1,66 +1,32 @@
-/*
-  Lucho's Custom CSS Reset, inspired by Josh's Custom CSS Reset
-  @https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Dropdown menu */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-* {
+.toggle-arrow {
+  height: 1rem;
+  width: 1rem;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+  align-self: flex-end;
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  /* background-color: blue; */
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
   margin: 0;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-#root,
-#__next {
-  isolation: isolate;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-dialog {
-  border: none;
-  outline: none;
-  max-width: 100%;
-  padding: 0;
+.rotated {
+  transform: rotate(360deg);
 }
