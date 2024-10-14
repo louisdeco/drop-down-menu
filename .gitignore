@@ -30,3 +30,6 @@ build/
 # OS files
 .DS_Store
 
+# Html test file
+src/index.html
+
