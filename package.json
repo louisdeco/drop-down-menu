@@ -1,5 +1,5 @@
 {
-  "name": "drop-down-menu",
+  "name": "dropdown-menu",
   "version": "1.0.0",
   "description": "Drop-down menu package",
   "main": "drop-down.js",
@@ -20,9 +20,14 @@
     "**/*": "prettier --write",
     "**/*.{js,jsx}": "eslint --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "dropdown",
+    "menu",
+    "javascript",
+    "css"
+  ],
+  "author": "luchodeco",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.11.1",
     "css-loader": "^7.1.2",
